@@ -34,14 +34,16 @@ $( window ).scroll( function () {
     	$('#logo-placeholder').show()	
     }
     if ( $window.scrollTop() > 1 ) {
-      $(".logo-black-cover").fadeIn(500)
+      $("#logo-black-cover").fadeOut(500)
     } else {
-    	$(".logo-black-cover").fadeOut(200)
+      $("#logo-black-cover").fadeIn(200)
     }
     if ( $window.scrollTop() > 200 ) {
       $("#brand-logo").fadeIn(500)
+      $('#logo-bar').height(12)
     } else {
-    	$("#brand-logo").fadeOut(200)
+      $("#brand-logo").fadeOut(200)
+      $('#logo-bar').height(20)
     }
 
 });
