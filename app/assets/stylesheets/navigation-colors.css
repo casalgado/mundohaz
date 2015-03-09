@@ -1,0 +1,97 @@
+/* navbar */
+.navbar .navbar-nav {
+  background-color: white;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-family: sans-serif;
+  border-color: white;
+}
+
+.navbar-nav li {
+  margin: auto 30px auto 30px;
+}
+
+.navbar-nav a {
+  padding-bottom: 4px !important;
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+  border-bottom: 1px solid white;
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-header a {
+  position: absolute;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+    background-image: none; 
+}
+
+
+/* links */
+.navbar-default .navbar-nav li a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: white;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+    }
+}
+
+
+

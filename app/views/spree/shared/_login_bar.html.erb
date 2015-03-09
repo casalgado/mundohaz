@@ -1,0 +1,16 @@
+<li id="login-links">
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    <span class='glyphicon glyphicon-user' aria-hidden='true'></span>
+    <span class='caret'></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <% if spree_current_user %>
+      <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+      <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+    <% else %>
+      <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+    <% end %>
+  </ul>
+</div>
+</li>
