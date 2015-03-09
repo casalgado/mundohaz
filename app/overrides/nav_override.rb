@@ -63,10 +63,10 @@ Deface::Override.new(:virtual_path  => "spree/shared/_search",
                      :remove        => "erb[loud]:contains(':taxon')",
                      :name          => "remove-search-by-taxon")
 
-Deface::Override.new(:virtual_path  => "spree/shared/_search",
-                     :set_attributes => "erb[loud]:contains('submit_tag')",
-                     :attributes    => { :class => 'btn btn-success search-button'},
-                     :name          => "style-search-button" )
+# Deface::Override.new(:virtual_path  => "spree/shared/_search",
+#                      :set_attributes => "erb[loud]:contains('submit_tag')",
+#                      :attributes    => { :class => 'btn btn-success search-button'},
+#                      :name          => "style-search-button" )
 
 
 

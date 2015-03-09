@@ -19,3 +19,10 @@ gem 'spring', group: :development
 gem 'spree', git: 'https://github.com/spree/spree.git', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+
+
+group :production do
+	gem 'pg', '0.18.1'
+	gem 'rails_12factor', '0.0.3'
+end
+
