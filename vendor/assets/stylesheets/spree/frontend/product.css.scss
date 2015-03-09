@@ -1,0 +1,85 @@
+
+
+.borderr {
+	border: 1px solid red !important;
+}
+
+#add-to-cart-button {
+	margin-top: 30px;
+	background-color: black;
+	border: 1px solid black;
+	text-transform:uppercase;
+	font-family: 'Syncopate', sans-serif;
+}
+
+
+#quantity-input {
+	width: 80px;
+}
+
+#main-image {
+	border: none !important;
+}
+
+.panel-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -10px;
+	left: 0;
+	background: rgba(255, 255, 255, .9);
+	z-index: 1;
+	padding: 20px;
+}
+
+
+.panel-frame {
+	width: 100%;
+	height: 100%;
+	border: 1px solid gray;
+	margin: 0 auto;
+	z-index: 1;
+	text-align: center;
+	font-family: 'Syncopate', sans-serif;
+}
+
+.product-name {
+	position: relative;
+	top: 50px;
+}
+
+.product-price {
+	position: relative;
+	top: 90px;
+}
+
+
+.panel-frame a {
+	font-family: 'Syncopate', sans-serif;
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}
+
+.panel-frame a:hover {
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}
+
+.panel-frame a:active {
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}
+
+.panel-frame a:visited {
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}
+
+.panel-body {
+	height: 222px;
+}
+

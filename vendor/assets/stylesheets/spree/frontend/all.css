@@ -8,3 +8,20 @@
  *= require_self
  *= require_tree .
 */
+
+
+body h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+a, a:hover, a:active, a:visited {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}

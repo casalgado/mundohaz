@@ -68,6 +68,16 @@ Deface::Override.new(:virtual_path  => "spree/shared/_search",
 #                      :attributes    => { :class => 'btn btn-success search-button'},
 #                      :name          => "style-search-button" )
 
+Deface::Override.new(:virtual_path   => "spree/layouts/spree_application",
+                     :insert_before  => "[data-hook='body']",
+                     :text           => " <link href='http://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
+                                          <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>",
+                     :name           => "Fonts")
+
+Deface::Override.new(:virtual_path   => "spree/taxons/show",
+                     :replace_contents => ".taxon-title",
+                     :text           => "",
+                     :name           => "remove taxon title")
 
 
 
