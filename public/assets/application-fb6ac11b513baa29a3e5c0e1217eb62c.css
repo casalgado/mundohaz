@@ -1,0 +1,235 @@
+/* line 2, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+#slider {
+  position: fixed;
+  z-index: -1;
+}
+
+/* line 7, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+#carousel-example-generic {
+  z-index: -1;
+}
+
+/* line 11, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+#img1 {
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: white;
+}
+
+/* line 17, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+#img2 {
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: white;
+}
+
+/* line 23, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+#img3 {
+  width: 100%;
+  padding-bottom: 50%;
+  background-color: white;
+}
+
+/* line 30, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+.carousel.fade {
+  opacity: 1;
+}
+/* line 34, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  z-index: 1;
+}
+/* line 46, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+.carousel.fade .item:first-child {
+  top: auto;
+  position: relative;
+}
+/* line 52, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/carousel.css.scss */
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index: 2;
+}
+/* navbar */
+
+.navbar .navbar-nav {
+  background-color: white;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-family: sans-serif;
+  border-color: white;
+}
+
+.navbar-nav li {
+  margin: auto 30px auto 30px;
+}
+
+.navbar-nav a {
+  padding-bottom: 4px !important;
+  padding-right: 6px !important;
+  padding-left: 6px !important;
+  border-bottom: 1px solid white;
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-header a {
+  position: absolute;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    box-shadow: none;
+    background-image: none; 
+}
+
+
+/* links */
+.navbar-default .navbar-nav li a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: white;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+    }
+}
+
+
+
+/* line 3, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+.navbar-default {
+  margin-bottom: 0px;
+  border-top: 1px solid black;
+  position: relative;
+  top: -1px;
+}
+
+/* line 10, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+#brand-logo {
+  margin-left: 48px;
+}
+
+/* line 16, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+.nav {
+  padding-right: 100px;
+}
+/* line 19, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+.nav li {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+/* line 24, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+.nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+}
+
+/* line 31, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+.for-fixed {
+  position: fixed;
+}
+
+/* line 35, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+#logo-bar {
+  background-color: black;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 6px;
+  z-index: 50;
+}
+
+/* line 43, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+#logo-placeholder {
+  background-color: transparent;
+  height: 20px;
+  width: 100%;
+  margin-bottom: 6px;
+  z-index: -2;
+}
+
+/* line 51, /Users/carlosalbertosalgadohazbun/Desktop/boot_spree/app/assets/stylesheets/navigation.css.scss */
+#logo-bar img {
+  position: absolute;
+  left: 80px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
