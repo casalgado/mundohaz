@@ -18,7 +18,6 @@ gem 'spring', group: :development
 gem 'spree', git: 'https://github.com/spree/spree.git', branch: '3-0-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
-gem 'spree_variant_options', git: 'git://github.com/sbounmy/spree_variant_options.git', branch: "2-0-stable"
 
 group :development do
 	gem 'sqlite3'
