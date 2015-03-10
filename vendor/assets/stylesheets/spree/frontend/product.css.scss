@@ -32,7 +32,6 @@
 }
 
 .panel {
-
 	border-radius: 0px;
 	border: none;
 	box-shadow: none;
@@ -40,7 +39,6 @@
 
 .panel-default {
 	box-shadow: none;
-	
 }
 
 .panel-overlay {
@@ -73,9 +71,12 @@
 	text-decoration: none;
 }
 
+.product-index-panel {
+	height: 222px;
+}
+
 
 .panel-body {
-	height: 222px;
 	border: none;
 }
 

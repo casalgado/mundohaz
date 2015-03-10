@@ -1,4 +1,6 @@
 
+
+
 #update-button {
 	background-color: zaphire;
 	border: 1px solid zaphire;
@@ -7,17 +9,23 @@
 }
 
 
-#add-to-cart-button, #checkout-link {
-	background-color: black;
-	border: 1px solid black;
-	text-transform:uppercase;
-	font-family: 'Syncopate', sans-serif;
-}
+
 
 #add-to-cart-button {
 	margin-top: 30px;
 }
 
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+	background-color: #e0018d;
+	border-color: #e0018d;
+}
+
+.btn-success, .btn-success:hover, .btn-success:visited, .btn-success:focus  {
+	background-color: black;
+	border: 1px solid black;
+	text-transform: uppercase;
+	font-family: 'Syncopate', sans-serif;
+}
 
 
 #quantity-input, .line_item_quantity {
