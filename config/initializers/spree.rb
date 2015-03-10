@@ -11,6 +11,7 @@
 # config.setting_name = 'new value'
 Spree.config do |config|
 
+
 end
 
 
