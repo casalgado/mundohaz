@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: bcd933ec7051c46da48c68e0c9cfd0089ef4beed
+  revision: 504ee9621da6479e474d7b12d08dfd84b5da465b
   branch: 3-0-stable
   specs:
     spree_gateway (3.0.0.beta)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree.git
-  revision: 35678353128bed14c1e950c90375b8cc98ecef55
+  revision: 17207488a517f7a7f6f97ba39e0dd7e1d8b7b32b
   branch: 3-0-stable
   specs:
     spree (3.0.0.rc5)
@@ -172,7 +172,7 @@ GEM
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
     erubis (2.7.0)
-    execjs (2.3.0)
+    execjs (2.4.0)
     ffaker (1.32.1)
     font-awesome-rails (4.3.0.0)
       railties (>= 3.2, < 5.0)
@@ -187,7 +187,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    jbuilder (2.2.9)
+    jbuilder (2.2.11)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
