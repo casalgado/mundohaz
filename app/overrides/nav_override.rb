@@ -4,7 +4,7 @@ Deface::Override.new(:virtual_path  => "spree/shared/_main_nav_bar",
                      :name          => "remove-home-link")
 
 Deface::Override.new(:virtual_path  => "spree/shared/_nav_bar",
-                     :insert_before  => "li#login-links",
+                     :insert_before => "li#login-links",
                      :text          => "
 										 <li id='link-to-cart' data-hook>
 							        <noscript>
