@@ -12,24 +12,38 @@
 Spree.config do |config|
 
 
+
+attachment_config = {
+
+  s3_credentials: {
+    access_key_id:     ENV['ACCESS'],
+    secret_access_key: ENV['SECRET'],
+    bucket:            ENV['BUCKET']
+  },
+
+  storage:        :s3,
+  s3_headers:     { "Cache-Control" => "max-age=31557600" },
+  s3_protocol:    "https",
+  bucket:         ENV['BUCKET'],
+  url:            ":s3_domain_url",
+
+  styles: {
+      mini:     "48x48>",
+      small:    "100x100>",
+      product:  "240x240>",
+      large:    "600x600>"
+  },
+
+  path:           "/:class/:id/:style/:basename.:extension",
+  default_url:    "/:class/:id/:style/:basename.:extension",
+  default_style:  "product"
+}
+
+attachment_config.each do |key, value|
+  Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+end
+
 end
 
 
 Spree.user_class = "Spree::LegacyUser"
-
-
-
-Spree.config do |config|
-  config.use_s3 = true
-  config.s3_bucket = ENV['BUCKET']
-  config.s3_access_key = ENV['ACCESS']
-  config.s3_secret = ENV['SECRET']
-
-  # if you create your Amazon S3 bucket on Western Europe server, you need these two additional options:
-  # config.attachment_url = ":s3_eu_url"
-  # config.s3_host_alias = "s3-eu-west-1.amazonaws.com"
-end
-
-Paperclip.interpolates(:s3_eu_url) do |attachment, style|
-	"#{attachment.s3_protocol}://#{Spree::Config[:s3_host_alias]}/#{attachment.bucket_name}/#{attachment.path(style).gsub(%r{^/},"")}"
-end

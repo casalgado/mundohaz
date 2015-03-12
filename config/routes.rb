@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resource :pages do 
     get 'home'
     get 'intro'
+    get 'collections'
+    get 'about'
+    get 'stores'
   end
 
   

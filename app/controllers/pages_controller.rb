@@ -8,5 +8,14 @@ class PagesController < ApplicationController
 
   def show
   end
+
+  def about
+  end
+
+  def stores
+  end
+
+  def collections
+  end
   
 end

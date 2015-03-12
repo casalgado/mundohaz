@@ -17,8 +17,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= controller_name %> <%= action_name %>">
 
+<div id="page-content" style="background-color:white">
+	<%= render 'navigation' %>
+</div>
+
+	
 <%= yield %>
 
 <!-- Latest compiled and minified JavaScript -->
