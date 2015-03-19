@@ -44,3 +44,5 @@ attachment_config.each do |key, value|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
+Rails.application.config.spree.payment_methods << Spree::PaymentMethod::MercadoPago
