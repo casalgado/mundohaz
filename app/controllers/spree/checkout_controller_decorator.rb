@@ -12,9 +12,9 @@ module Spree
       if payment_method.kind_of?(Spree::PaymentMethod::MercadoPagoPayment)
 
         back_urls = {
-			    pending: pending_spree_mercado_pago_url,
-			    success: callback_spree_mercado_pago_url,
-			    failure: failure_spree_mercado_pago_url
+			    pending: pending_mercado_pago_url,
+			    success: callback_mercado_pago_url,
+			    failure: failure_mercado_pago_url
 			  }
         payment = payment_method.create_preference(current_order, back_urls)
         byebug

@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
 
-
-  mount Spree::Core::Engine, :at => '/'
-
   resource :pages do
     get 'home'
     get 'intro'
@@ -12,13 +9,21 @@ Rails.application.routes.draw do
     get 'stores'
   end
 
-  namespace :spree do
-    resource :mercado_pago, only: [] do
+  # namespace :spree do
+  #   resource :mercado_pago, only: [] do
+  #     get 'pending'
+  #     get 'callback'
+  #     get 'failure'
+  #   end
+  # end
+
+  mount Spree::Core::Engine, :at => '/'
+  Spree::Core::Engine.routes.draw do
+    resource :mercado_pago, only: [], controller: 'mercado_pago' do
       get 'pending'
       get 'callback'
       get 'failure'
     end
   end
-
 
 end
