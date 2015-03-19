@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'aws-sdk', '~> 2.0'
 gem 'aws-sdk-v1'
+gem 'mercadopago'
 
 group :development do
 	gem 'sqlite3'
