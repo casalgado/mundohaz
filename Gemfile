@@ -13,12 +13,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'aws-sdk', '~> 2.0'
 gem 'aws-sdk-v1'
-gem 'figaro'
 
 group :development do
 	gem 'sqlite3'
 	gem 'byebug'
 	gem 'spring'
+	gem 'figaro'
 end
 
 group :production do
