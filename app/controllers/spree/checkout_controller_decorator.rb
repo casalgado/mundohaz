@@ -10,17 +10,21 @@ module Spree
       payment_method = PaymentMethod.find(params[:order][:payments_attributes].first[:payment_method_id])
 
       if payment_method.kind_of?(Spree::PaymentMethod::MercadoPagoPayment)
-
+        payment = current_order.payments.create({:amount => current_order.total,
+                                                 :source => nil,
+                                                 :payment_method => payment_method })
         back_urls = {
-			    pending: pending_mercado_pago_url,
-			    success: callback_mercado_pago_url,
-			    failure: failure_mercado_pago_url
+			    pending: pending_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number),
+			    success: callback_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number),
+			    failure: failure_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number)
 			  }
-        payment = payment_method.create_preference(current_order, back_urls)
-        byebug
-        if payment["error"].nil?
-          redirect_to payment["init_point"]
+        preference = payment_method.create_preference(current_order, back_urls)
+        if preference["error"].nil?
+          payment.started_processing!
+          redirect_to preference["init_point"]
         else
+          redirect_to edit_order_checkout_url(current_order, :state => 'payment'),
+                    :notice => Spree.t(:spree_gateway_error_flash_for_checkout)
         end
       end
     end

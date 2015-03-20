@@ -33,18 +33,40 @@ module Spree
 					currency_id:  item.currency
 				}
 			end
-			
+			if order.tax_zone
+				items << {
+					title:        Spree.t(:tax),
+					description:  order.tax_zone.name,
+					quantity:     1,
+					unit_price:   order.additional_tax_total.to_f,
+					currency_id:  order.currency
+				}
+			end
+			unless order.shipments.empty?
+				shipments = order.shipments.map do |shipment|
+					{
+						id:           shipment.id,
+						title:        Spree.t(:shipment),
+						quantity:     1,
+						unit_price:   shipment.cost.to_f,
+						currency_id:  order.currency
+					}
+				end
+				items = (items + shipments).flatten
+			end
+
 			@mp_client ||= MercadoPago::Client.new(self.preferences[:client_id], self.preferences[:client_secret])
 
 			data = {
 			  external_reference: order.number,
 			  items: items,
-			  payer: {
-			    name:     order.ship_address.firstname,
-			    surname:  order.ship_address.lastname,
-			    email:    order.email
-			  },
-			  back_urls: back_urls
+				payer: {
+					name: order.ship_address.firstname,
+					surname: order.ship_address.lastname,
+					email: order.email,
+				},
+				auto_return: "approved",
+			  back_urls: back_urls,
 			}
 
 			return @mp_client.create_preference(data)
