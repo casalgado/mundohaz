@@ -1,0 +1,22 @@
+
+body h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+a, a:hover, a:active, a:visited {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color:black !important;
+	text-decoration: none;
+}
+
+
+h4.taxonomy-root, h3.product-section-title {
+	font-size: 100%;
+	padding-left: 4px;
+}

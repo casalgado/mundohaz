@@ -10,18 +10,16 @@
 */
 
 
-body h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
+
+
+li#search-bar input.btn.btn-success {
+	margin-top: 10px;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
+.first-li-in-dropdown {
+	margin-top: 20px;
 }
 
-a, a:hover, a:active, a:visited {
-	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-	color:black !important;
-	text-decoration: none;
+.last-li-in-dropdown {
+	margin-bottom: 7px;
 }

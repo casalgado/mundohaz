@@ -6,10 +6,10 @@
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
     <% if spree_current_user %>
-      <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
-      <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+      <li class="first-li-in-dropdown"><%= link_to Spree.t(:my_account), spree.account_path %></li>
+      <li class="last-li-in-dropdown"><%= link_to Spree.t(:logout), spree.logout_path %></li>
     <% else %>
-      <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+      <li id="link-to-login" class="first-li-in-dropdown last-li-in-dropdown"><%= link_to Spree.t(:login), spree.login_path %></li>
     <% end %>
   </ul>
 </div>
