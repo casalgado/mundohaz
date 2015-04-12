@@ -88,4 +88,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.assets.precompile += %w[vendor/assets/javascripts/spree/frontend/product_index.js vendor/assets/javascripts/spree/backend/all.js vendor/assets/javascripts/spree/frontend/all.js vendor/assets/stylesheets/spree/backend/all.css vendor/assets/stylesheets/spree/frontend/all.css]
 end
