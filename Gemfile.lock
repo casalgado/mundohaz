@@ -18,6 +18,12 @@ GIT
     spree_gateway (3.0.0.beta)
       spree_core (~> 3.0.0.beta)
 
+PATH
+  remote: vendor/gems/spree_variant_options-0.4.1
+  specs:
+    spree_variant_options (0.4.1)
+      spree_core (>= 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -371,6 +377,7 @@ DEPENDENCIES
   spree (= 3.0.0)
   spree_auth_devise!
   spree_gateway!
+  spree_variant_options!
   spring
   sqlite3
   turbolinks

@@ -9,3 +9,5 @@
 //= require spree/frontend
 
 //= require_tree .
+//= require store/product_variant_options
+//= require store/variant_options

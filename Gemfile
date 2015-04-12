@@ -30,3 +30,4 @@ end
 gem 'spree', '3.0.0'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+gem 'spree_variant_options', :path => "vendor/gems/spree_variant_options-0.4.1"

@@ -1,0 +1,24 @@
+module SpreeVariantOptions
+  class Engine < Rails::Engine
+
+    engine_name "spree_variant_options"
+
+    config.to_prepare do
+      #loads application's model / class decorators
+      Dir.glob File.expand_path("../../../app/**/*_decorator.rb", __FILE__) do |c|
+        Rails.configuration.cache_classes ? require(c) : load(c)
+      end
+
+      #loads application's deface view overrides
+      Dir.glob File.expand_path("../../../app/overrides/*.rb", __FILE__) do |c|
+        Rails.application.config.cache_classes ? require(c) : load(c)
+      end
+
+      Spree::AppConfiguration.class_eval do
+        preference :allow_backorders, :boolean
+      end
+      Spree::Config.allow_backorders = true
+    end
+
+  end
+end
