@@ -6,7 +6,7 @@ Deface::Override.new(:virtual_path  => "spree/shared/_main_nav_bar",
 Deface::Override.new(:virtual_path  => "spree/shared/_nav_bar",
                      :insert_before => "li#login-links",
                      :text          => "
-										 <li id='link-to-cart' data-hook>
+								<li id='link-to-cart' data-hook>
 							        <noscript>
 							          <%= link_to Spree.t(:cart), '/cart' %>
 							        </noscript>
@@ -31,7 +31,7 @@ Deface::Override.new(:virtual_path  => "spree/shared/_nav_bar",
 
 Deface::Override.new(:virtual_path     => "spree/shared/_header",
                      :insert_before    => "figure#logo",
-                     :text             => "<%= image_tag('thin-bar-logo.svg', id: 'new-logo') %>",
+                     :text             => "<%= link_to(image_tag('thin-bar-logo.svg', id: 'new-logo'), root_path) %>",
                      :name             => "new-logo-svg")
 
 

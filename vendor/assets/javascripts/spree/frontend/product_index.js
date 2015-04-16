@@ -2,8 +2,6 @@
 
 var ready = function() {
 
-
-
   // Nav link hover
 
   $('.panel-overlay').hide()
@@ -16,14 +14,7 @@ var ready = function() {
     $(this).find('.panel-overlay').hide();
   });
 
-
-
 };
-
-
-
-
-
 
 $(document).ready(ready);
 $(document).on('page:load', ready);

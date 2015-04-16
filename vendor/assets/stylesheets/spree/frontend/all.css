@@ -24,3 +24,7 @@ li#search-bar input.btn.btn-success {
 .last-li-in-dropdown {
 	margin-bottom: 7px;
 }
+
+h1.product-title, #content > div > h1 {
+	font-size: 25px;
+}

@@ -1,4 +1,31 @@
 
+
+.breadcrumb {
+
+	background-color: white;
+
+	li span a { 
+		font-family: 'lato';
+	}
+}
+
+
+#product-description .well {
+	border: 1px solid lightgray !important;
+	background-color: whitesmoke;
+	-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+img.thumbnail {
+	border-radius: 0px;
+}
+
+div.well {
+	border-radius: 0px;
+}
+
 #product-image-container-store {
 	overflow: hidden;
 	margin: 0 auto;
@@ -89,7 +116,7 @@
 	background-color: zaphire;
 	border: 1px solid zaphire;
 	text-transform:uppercase;
-	font-family: 'Syncopate', sans-serif;
+	font-family: 'Montserrat';
 }
 
 
@@ -101,11 +128,11 @@
 
 
 
-.btn-success, .btn-success:hover, .btn-success:visited, .btn-success:focus  {
+.btn-success, .btn-success:hover, .btn-success:visited, .btn-success:focus, .btn-success:disabled  {
 	background-color: black;
 	border: 1px solid black;
 	text-transform: uppercase;
-	font-family: 'Syncopate', sans-serif;
+	font-family: 'Montserrat';
 }
 
 
@@ -113,10 +140,7 @@
 	width: 80px;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
-	background-color: #e0018d;
-	border-color: #e0018d;
-}
+
 
 .list-group-item.active, .list-group-item.active:hover {
 	background-color: #e0018d;
@@ -127,4 +151,6 @@
 	background-color: #e0018d;
 	border-color: #e0018d;
 }
+
+
 
