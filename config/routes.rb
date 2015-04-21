@@ -19,11 +19,7 @@ Rails.application.routes.draw do
 
   mount Spree::Core::Engine, :at => '/'
   Spree::Core::Engine.routes.draw do
-    resource :mercado_pago, only: [], controller: 'mercado_pago' do
-      get 'pending'
-      get 'callback'
-      get 'failure'
-    end
+
   end
 
 end

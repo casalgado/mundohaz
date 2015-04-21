@@ -19,6 +19,12 @@ GIT
       spree_core (~> 3.0.0.beta)
 
 PATH
+  remote: vendor/gems/spree_mercado_pago-0.0.1
+  specs:
+    spree_mercado_pago (0.0.1)
+      rails (~> 4.2.0)
+
+PATH
   remote: vendor/gems/spree_variant_options-0.4.1
   specs:
     spree_variant_options (0.4.1)
@@ -377,7 +383,8 @@ DEPENDENCIES
   spree (= 3.0.0)
   spree_auth_devise!
   spree_gateway!
-  spree_variant_options!
+  spree_mercado_pago!
+  spree_variant_options (= 0.4.1)!
   spring
   sqlite3
   turbolinks
