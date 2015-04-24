@@ -383,7 +383,7 @@ DEPENDENCIES
   spree (= 3.0.0)
   spree_auth_devise!
   spree_gateway!
-  spree_mercado_pago!
+  spree_mercado_pago (= 0.0.1)!
   spree_variant_options (= 0.4.1)!
   spring
   sqlite3
