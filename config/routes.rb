@@ -8,16 +8,8 @@ Rails.application.routes.draw do
     get 'about'
     get 'stores'
   end
-
-  # namespace :spree do
-  #   resource :mercado_pago, only: [] do
-  #     get 'pending'
-  #     get 'callback'
-  #     get 'failure'
-  #   end
-  # end
-
-  mount Spree::Core::Engine, :at => '/'
+  root 'pages#home'
+  mount Spree::Core::Engine, :at => '/store'
   Spree::Core::Engine.routes.draw do
 
   end
