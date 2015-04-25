@@ -11,3 +11,4 @@
 //= require_tree .
 //= require store/product_variant_options
 //= require store/variant_options
+//= require spree/frontend/spree_i18n

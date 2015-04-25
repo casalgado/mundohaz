@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module BootSpree
   class Application < Rails::Application
-    
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -22,6 +22,7 @@ module BootSpree
     end
 
     config.autoload_paths << Rails.root.join('lib')
+    config.i18n.default_locale = :es
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
