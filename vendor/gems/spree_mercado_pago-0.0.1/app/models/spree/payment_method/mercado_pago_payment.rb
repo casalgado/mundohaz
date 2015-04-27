@@ -5,6 +5,30 @@ module Spree
     preference :client_id, :string
     preference :client_secret, :string
 
+		def actions
+      %w{capture void}
+    end
+
+    # Indicates whether its possible to capture the payment
+    def can_capture?(payment)
+      ['checkout', 'pending'].include?(payment.state)
+    end
+
+    # Indicates whether its possible to void the payment.
+    def can_void?(payment)
+      payment.state != 'void'
+    end
+
+		def capture(*args)
+      ActiveMerchant::Billing::Response.new(true, "Valid MercadoPago", {}, {})
+    end
+
+		def cancel(response); end
+
+    def void(*args)
+      ActiveMerchant::Billing::Response.new(true, "Voided MercadoPago", {}, {})
+    end
+
 		def auto_capture?
 			false
 	  end

@@ -1,0 +1,9 @@
+<fieldset data-hook="credit_card">
+  <legend><%= Spree.t(:credit_card) %></legend>
+  <table class="table table-condensed table-bordered">
+    <tr>
+      <th><%= Spree.t(:state) %>:</th>
+      <td><%= Spree.t(@payment.state, :scope => :payment_states, :default => @payment.state.capitalize) %></td>
+    </tr>
+  </table>
+</fieldset>

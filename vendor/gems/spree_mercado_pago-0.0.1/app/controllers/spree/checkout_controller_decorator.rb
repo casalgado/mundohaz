@@ -14,9 +14,9 @@ module Spree
                                                  :source => nil,
                                                  :payment_method => payment_method })
         back_urls = {
-			    pending: pending_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number),
-			    success: callback_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number),
-			    failure: failure_mercado_pago_url(:payment_method_id => payment_method.id, payment_id: payment.number)
+			    pending: pending_mercado_pago_url(payment_id: payment.number),
+			    success: callback_mercado_pago_url(payment_id: payment.number),
+			    failure: failure_mercado_pago_url(payment_id: payment.number)
 			  }
         preference = payment_method.create_preference(current_order, back_urls)
         if preference["error"].nil?
