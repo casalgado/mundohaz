@@ -46,5 +46,5 @@ end
 Spree.user_class = "Spree::LegacyUser"
 Spree::Config.currency = "COP"
 
-SpreeI18n::Config.available_locales = [:"es-MX", :en]
-SpreeI18n::Config.supported_locales = [:"es-MX", :en]
+SpreeI18n::Config.available_locales = [:es, :en]
+SpreeI18n::Config.supported_locales = [:es, :en]
