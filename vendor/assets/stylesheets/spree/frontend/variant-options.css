@@ -30,4 +30,9 @@
 a.clear-button {
 	font-family: helvetica;
 	font-weight: 400;
+	color: darkred !important;
+}
+
+li.clear-option a.clear-button:hover {
+	background-color: mistyrose !important;
 }

@@ -1076,6 +1076,23 @@ ActiveRecord::Schema.define(version: 20150425113752) do
   add_index "spree_variants", ["tax_category_id"], name: "index_spree_variants_on_tax_category_id", using: :btree
   add_index "spree_variants", ["track_inventory"], name: "index_spree_variants_on_track_inventory", using: :btree
 
+  create_table "spree_wholesalers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "company"
+    t.string   "buyer_contact"
+    t.string   "manager_contact"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "resale_number"
+    t.string   "taxid"
+    t.string   "web_address"
+    t.string   "terms"
+    t.string   "alternate_email"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "spree_zone_members", force: :cascade do |t|
     t.integer  "zoneable_id"
     t.string   "zoneable_type"
