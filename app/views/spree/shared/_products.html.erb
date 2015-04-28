@@ -32,7 +32,7 @@
           <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
             <div class="panel-body text-center product-body">
               <%= link_to product_image(product, itemprop: "image"), url, itemprop: 'url', id: 'default-image' %><br/>
-              <%= link_to small_image(product, itemprop: "image"), url, itemprop: 'url', id: 'hover-image' %><br/>
+              <%#= link_to small_image(product, itemprop: "image"), url, itemprop: 'url', id: 'hover-image' %><!-- <br/> -->
             </div>
 
             <div class="panel-footer text-center">
