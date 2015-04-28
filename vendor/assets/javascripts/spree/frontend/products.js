@@ -1,4 +1,4 @@
-// var ready = function() {
+var ready = function() {
 
 //   // Nav link hover
 
@@ -16,7 +16,12 @@
     
 //   });
 
-// };
+	// Replace first character in price string 
+	var price = $('span.price.selling.lead').text()
+	var newPrice = price.replace("₱", "$")
+	$('span.price.selling.lead').html(newPrice)
 
-// $(document).ready(ready);
-// $(document).on('page:load', ready);
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

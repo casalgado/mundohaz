@@ -38,7 +38,7 @@
             <div class="panel-footer text-center">
               <%= link_to truncate(product.name, length: 20), url, class: 'info', itemprop: "name", title: product.name %> <br />
               <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <span class="price selling lead" itemprop="price"><%= display_price(product) %></span>
+                <span class="price selling lead" itemprop="price"> <%= display_price(product) %></span>
               </span>
             </div>
           <% end %>
