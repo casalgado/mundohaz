@@ -1,0 +1,1 @@
+var ready=function(){var e=$("span.price.selling.lead").text(),a=e.replace("\u20b1","$");$("span.price.selling.lead").html(a)};$(document).ready(ready),$(document).on("page:load",ready);
