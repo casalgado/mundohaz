@@ -1,17 +1,19 @@
-
-
 var ready = function() {
 
   // Nav link hover
 
-  $('.panel-overlay').hide()
+	$('.product-list-item').find('#hover-image').hide();  
 
   $('.product-list-item').on('mouseover click', function() {
-    $(this).find('.panel-overlay').show();
+    $(this).find('#default-image').hide();
+    $(this).find('#hover-image').show();
+    
   });
 
   $('.product-list-item').on('mouseout', function() {
-    $(this).find('.panel-overlay').hide();
+    $(this).find('#default-image').show();
+    $(this).find('#hover-image').hide();
+    
   });
 
 };
