@@ -7,8 +7,8 @@
 
  *= require_self
  *= require_tree .
- *= require store/variant_options
- */
+*= require store/variant_options
+*/
 
 
 

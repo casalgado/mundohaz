@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   
   def home
-    redirect_to spree.root_path
   end
 
   def intro

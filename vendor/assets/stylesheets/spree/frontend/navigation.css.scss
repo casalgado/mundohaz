@@ -1,0 +1,122 @@
+
+body {
+  margin-top: 70px;
+}
+
+#link-to-cart a {
+  padding: 6px 15px 0px 0px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 28px;
+}
+
+.dropdown {
+  display: inline;
+}
+
+#dropdownMenu1 {
+  border: none;
+}
+#dropdownMenu2 {
+  border: none;
+}
+
+.dropdown-menu li {
+  text-align: center;
+}
+
+#top-nav-bar {
+  padding-top: 10px;
+  float: right;
+}
+
+#main-nav-bar {
+  margin-top: 70px;
+}
+
+#thin-black-line {
+  position:relative;
+  top: -7px;
+  right: 35px;
+  width: 120%;
+  height: 1px;
+  background-color: black;
+  margin-top: 7px;
+}
+
+#black-line {
+  position:absolute;
+  top: 44px;
+  width: 100%;
+  height: 12px;
+  background-color: black;
+  margin-top: 7px;
+  z-index:-10;
+}
+
+#white-line {
+  position:fixed;
+  top: -16px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-top: 7px;
+}
+
+
+#new-logo {
+  float: left;
+  position: relative;
+  left: 44px;
+  top: 15px;
+  width: 286px;
+}
+
+#spree-header {
+  background: white;
+  background-size: cover;
+
+
+#header {
+  background: white;
+  padding-bottom: 0px;
+  border-bottom: 1px solid black;
+  position:fixed;
+  left: 35px;
+  z-index: 50;
+  top: -20px;
+  height: 71px;
+}
+
+  #logo {
+    margin-bottom: 10px;
+
+    img {
+      width: 306px;
+    }
+  }
+
+  .nav a {
+    color: black;
+
+    &:hover, &:focus {
+      background: white;
+    }
+  }
+
+  .nav-categories {
+    font-size: 150%;
+    padding: auto 10px auto 10px;
+  }
+
+  #shop-link {
+    font-size: 180%;
+    margin-right: 25px;
+  }
+
+  .navbar {
+    border: 0;
+  }
+}
