@@ -46,5 +46,14 @@ end
 Spree.user_class = "Spree::LegacyUser"
 Spree::Config.currency = "COP"
 
+hash = JSON.parse(Money::Currency.find(:cop).to_json)
+hash["iso_code"]="COP"
+hash["html_entity"]="$"
+hash.delete("id")
+hash = hash.inject({}){|memo,(k,v)| memo[k.to_sym] = v; memo}
+Money::Currency.register(hash)
+
 SpreeI18n::Config.available_locales = [:es, :en]
 SpreeI18n::Config.supported_locales = [:es, :en]
+Spree::Frontend::Config[:locale] = :es
+Spree::Backend::Config[:locale] = :en
