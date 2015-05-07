@@ -22,9 +22,7 @@
               <%= render :partial => 'image' %>
             </div>
           </div>
-          <div id="thumbnails" data-hook>
-            <%= render :partial => 'thumbnails' %>
-          </div>
+          
         </div>
 
         <div data-hook="product_properties">
@@ -44,6 +42,10 @@
 
           <div class="well" itemprop="description" data-hook="description">
             <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
+          </div>
+
+          <div id="thumbnails" data-hook>
+            <%= render :partial => 'thumbnails' %>
           </div>
 
           <div id="cart-form" data-hook="cart_form">

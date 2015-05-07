@@ -1,6 +1,6 @@
 $ ->
   Spree.addImageHandlers = ->
-    thumbnails = ($ '#product-images ul.thumbnails')
+    thumbnails = ($ '#product-description ul.thumbnails')
     ($ '#main-image').data 'selectedThumb', ($ '#main-image img').attr('src')
     thumbnails.find('li').eq(0).addClass 'selected'
     thumbnails.find('a').on 'click', (event) ->
